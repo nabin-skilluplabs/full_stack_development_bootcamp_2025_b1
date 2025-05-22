@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind Demo</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        --color-fancy: #e60076;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50 p-4">
+    <div
+      class="bg-white border border-gray-200 rounded-md py-2 px-2 lg:px-10 2xl:px-20 flex flex-col-reverse gap-4"
+    >
+      <div class="flex flex-col gap-4 p-4 pt-0">
+        <h3 class="hidden md:block">Entire house</h3>
+        <h2 class="text-3xl hidden md:block">Beach House on Lake Huron</h2>
+
+        <div class="text-sm flex gap-2 order-1">
+          <span class="text-fancy font-medium"
+            ><i class="fa-solid fa-star"></i> 2.66
+          </span>
+          <sapn class="text-gray-500">(128 reviews)</sapn>
+          <span class="text-fancy font-medium"> Bayfield, ON</span>
+        </div>
+
+        <p class="text-gray-600 text-sm order-3">
+          This sunny and spacious room is for those traveling light and looking
+          for a comfy and cozy place to lay their head for a night...
+          <a href="#" class="text-fancy font-bold">Show more</a>
+        </p>
+
+        <div class="order-2">
+          <a
+            href="#"
+            class="bg-fancy text-white w-full block rounded-md text-center px-3 py-2"
+            >Check availability</a
+          >
+        </div>
+      </div>
+
+      <div>
+        <div class="max-h-48 w-full overflow-hidden rounded-md relative">
+          <img
+            class="w-full h-48 object-cover object-center"
+            src="https://tailwindcss.com/_next/static/media/responsive-1.fd2e9248.png"
+            alt=""
+          />
+          <div class="absolute left-6 bottom-6 z-2 md:hidden">
+            <h3 class="text-sm text-white">Entire house</h3>
+            <h2 class="text-xl text-white">Beach House on Lake Huron</h2>
+          </div>
+          <div
+            class="absolute top-0 left-0 bottom-0 right-0 bg-linear-to-b from-transparent via-transparent to-gray-950 md:hidden"
+          >
+            &nbsp;
+          </div>
+        </div>
+        <img
+          class="hidden md:block"
+          src="https://tailwindcss.com/_next/static/media/responsive-2.8cfea49d.png"
+          alt=""
+        />
+        <img
+          class="hidden md:block"
+          src="https://tailwindcss.com/_next/static/media/responsive-3.e7467feb.png"
+          alt=""
+        />
+        <img
+          class="hidden"
+          src="https://tailwindcss.com/_next/static/media/responsive-4.8e943ba2.png"
+          alt=""
+        />
+        <img
+          class="hidden"
+          src="https://tailwindcss.com/_next/static/media/responsive-5.660185c2.png"
+          alt=""
+        />
+      </div>
+    </div>
+  </body>
+</html>

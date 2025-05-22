@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+  font-size: 16px;
+}
+
+body {
+  background-color: antiquewhite;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-optical-sizing: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Boldonse', system-ui;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.outer-container {
+  max-width: 756px;
+  width: 100%;
+  border: 1px solid black;
+  margin: 0px auto;
+  position: relative;
+}
+
+.header-container {
+  width: 100%;
+}
+
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: black;
+  text-decoration: none;
+  font-size: 26px;
+  display: flex;
+  justify-items: center;
+}
+.logo span {
+  background-color: black;
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+.header-menu {
+  text-align: right;
+}
+
+.header-menu a {
+  color: black;
+  text-decoration: none;
+}
+
+.hero-container {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.hero-container p {
+  color: #a4a4a4;
+}
+
+.main-row {
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  display: flex;
+}
+
+.main-row > div {
+  flex-basis: 33.33%;
+
+  border: 1px solid black;
+}
+
+.col1 div,
+.col2 div,
+.col3 div {
+  padding: 5px 10px;
+  border-bottom: 1px solid black;
+}
+
+.col1 div:last-child,
+.col2 div:last-child,
+.col3 div:last-child {
+  border-bottom: 0;
+}
+
+.last-row {
+  height: 190px;
+}
+
+.review-container {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  padding: 0px 10px;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 3;
+}
+
+.review-container div {
+  border: 1px solid #000;
+  border-radius: 20px;
+  padding: 15px;
+  background-color: white;
+}
+
+.review-container p:nth-child(2) {
+  opacity: 0.5;
+}
+
+#footer {
+  text-align: center;
+  padding: 100px 0;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+form input[type='text'],
+form input[type='email'],
+form textarea {
+  width: 100%;
+  padding: 5px;
+  font-size: 16px;
+  border-radius: 3px;
+  box-sizing: border-box;
+  border: 1px solid black;
+}
+
+form textarea {
+  height: 200px;
+}
+
+form tr:last-child td {
+  text-align: right;
+}
+
+input[type='submit'],
+input[type='reset'] {
+  background-color: black;
+  border: 1px solid black;
+  color: white;
+}
+
+.help {
+  width: 5rem;
+  height: 5rem;
+  background-color: black;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: 'Boldonse', system-ui;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+  transition-property: all;
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+  z-index: 4;
+}
+
+.help:hover {
+  background-color: white;
+  color: black;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+  width: 4.5rem;
+  height: 4.5rem;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 600px) {
+  /* body {
+    background-color: black;
+    color: white;
+  } */
+
+  .review-container {
+    flex-wrap: wrap;
+  }
+
+  .review-container div {
+    flex-basis: calc((100% - 10px) / 2);
+    box-sizing: border-box;
+  }
+
+  .review-container div:last-child {
+    flex-basis: auto;
+  }
+}
+@media screen and (max-width: 490px) {
+  :root {
+    font-size: 14px;
+  }
+  h3 {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 460px) {
+  :root {
+    font-size: 13px;
+  }
+
+  .top-header {
+    flex-direction: column;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+  }
+
+  .header-menu {
+    padding: 10px 0;
+    background-color: black;
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+  }
+
+  .header-menu a {
+    color: white;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .main-row {
+    flex-direction: column;
+  }
+
+  .review-container {
+    flex-direction: column;
+  }
+}
