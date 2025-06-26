@@ -58,12 +58,12 @@ function showCurrentItem() {
     answerElement.classList.add("hidden");
     showHideButton.textContent = 'Show Answer';
     updateProgressBar();
-}
+} 
 
 function updateProgressBar() {
     const percentage = (currentIndex + 1)/questionAnswers.length * 100;
-    progressElement.classList.add(`w-[${percentage}%]`);
-    progressPercentageElement.textContent = percentage.toFixed(2) + "%";
+    progressElement.style.width = `${400 * percentage / 100}px`;
+    progressPercentageElement.textContent = parseInt(percentage) + "%";
     statsElement.textContent = `${currentIndex + 1} of ${questionAnswers.length}`;
 }
 
