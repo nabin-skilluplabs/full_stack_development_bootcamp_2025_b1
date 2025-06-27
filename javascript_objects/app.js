@@ -85,3 +85,24 @@ delete fish.name;
 console.log(Object.keys(fish));
 console.log(Object.getOwnPropertyNames(fish))
 // Class
+class StudentClass {
+    constructor(firstName, lastName, email) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
+        this.age = null;
+    }
+
+    fullName(salutation = "Mr") {
+        return `${salutation} ${this.firstName} ${this.lastName}`;
+    }
+
+    setAge(age) {
+        this.age = age;
+    }
+}
+
+const studentA = new StudentClass("Alice", "Smith", "alice.smith@gmail.com");
+studentA.setAge(22);
+console.log(studentA.fullName());
+console.log(`Age: ${studentA.age}`);
