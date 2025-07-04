@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Web App</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="./app.js" defer></script>
+</head>
+<body class="flex justify-center items-center h-screen bg-gray-100">
+    
+    <div class="bg-white max-w-2xl w-full rounded-lg shadow-lg p-6 flex flex-col gap-4">
+        <form onsubmit="return false">
+            <input
+                class="w-full py-3 px-5 border border-gray-300 rounded-3xl capitalize"
+            type="text" id="location" name="location" placeholder="Enter a location" required />
+        </form>
+
+        <div id="weather-data" class="flex flex-col gap-2">
+            
+        </div>
+    </div>
+    
+</body>
+</html>
