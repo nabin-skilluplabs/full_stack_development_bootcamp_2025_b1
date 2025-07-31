@@ -6,9 +6,9 @@ export default function ScientistsList(){
         <div>
             <h2>Scientists</h2>
             {
-                people.map((scientist) => (
-                    <ScientistItem scientist={scientist} key={scientist.id} />
-                ))
+                people.map((scientist) => <ScientistItem scientist={scientist} key={scientist.id} />
+                    
+                )
             }
         </div>
     );
