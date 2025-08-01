@@ -1,10 +1,12 @@
 import { useState } from 'react';
 
 export default function ScientistItem({ scientist }) {
+    let [visitCount, setVisitCount] = useState(0);
     let [backgroundColor, setBackgroundColor] = useState('#eeeeee');
     
     function sayHello() {
         alert(`Hello ${scientist.name}`);
+        setVisitCount(visitCount + 1);
     }
 
     function changeBackground() {
@@ -24,6 +26,9 @@ export default function ScientistItem({ scientist }) {
             <div style={{textAlign: "left"}}>
                 <h2>{scientist.name}</h2>
                 <p><strong>{scientist.profession}</strong> {scientist.accomplishment}</p>
+                {
+                    scientist.showVisitCount && <p><small>Total clicks: {visitCount}</small></p>
+                }
             </div>
         </div>
     );
