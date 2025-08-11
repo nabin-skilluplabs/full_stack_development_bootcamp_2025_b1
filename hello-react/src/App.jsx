@@ -9,6 +9,7 @@ function App() {
     <>
       <ul>
         <li><Link to="/thinking-in-react">Thinking in react</Link></li>
+        <li><Link to="/portal">Portal</Link></li>
       </ul>
       <Counter />
       <ScientistsList />
