@@ -10,7 +10,9 @@ function App() {
       <ul>
         <li><Link to="/thinking-in-react">Thinking in react</Link></li>
         <li><Link to="/portal">Portal</Link></li>
+        <li><Link to="/photo-browser">Photo Browser</Link></li>
       </ul>
+      <hr />
       <Counter />
       <ScientistsList />
     </>
