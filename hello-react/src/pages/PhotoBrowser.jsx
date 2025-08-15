@@ -33,8 +33,8 @@ export default function PhotoBrowser(){
     }
 
     return (
-        <div>
-            <h2>Photo Browser</h2>
+        <div className="p-3 ">
+            <h2 className="text-5xl py-4">Photo Browser</h2>
             <div className="flex flex-wrap gap-4 mb-4">
                 {
                     collections.map(collection => <button onClick={() => loadCollection(collection.id)} className="bg-gray-300 rounded-md p-3" key={collection.id}>{collection.title}</button>)
