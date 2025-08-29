@@ -19,6 +19,9 @@ export async function questionAI(question) {
             Limit the response to 300 words.
             Repeat the question in the response as the haading.
             Provide response in paragraphs with proper spacing.
+            Use bullet points or numbered lists for clarity when needed.
+            Ensure the response is easy to read and visually appealing.
+            Use emojis relevant to the content.
             `,
         input: question,
       });
