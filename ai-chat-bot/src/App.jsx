@@ -30,7 +30,7 @@ function App() {
     <div className="w-full h-screen flex flex-col justify-center items-center">
       
       <form onSubmit={handleSubmit(onSubmit)} className="w-1/2 max-auto">
-        <textarea disabled={isSubmitting} onKeyDown={handleKeyDown} {...register("question", { required: true })} className="border border-gray-300 shadow-md rounded-md w-full h-[100px] p-4 text-lg bg-white disabled:bg-gray-50" placeholder="Type someting that you want me to write song of...."></textarea>
+        <textarea disabled={isSubmitting} onKeyDown={handleKeyDown} {...register("question", { required: true })} className="border border-gray-300 shadow-md rounded-md w-full h-[100px] p-4 text-lg bg-white disabled:bg-gray-50" placeholder="Ask me anything related to australian migration...."></textarea>
       </form>
       {
         isSubmitting && (
